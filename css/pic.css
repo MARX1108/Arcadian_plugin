@@ -1,0 +1,396 @@
+
+/* header section--------------------------------------------------------------- */
+
+#header {
+    background-color: #ffffff;
+    padding: 2% 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+#header h1 {
+    display: inline-block;
+    padding: 0 10% 0 5%;
+}
+
+#header form {
+    display: inline-block;
+    padding: 0 5% 0 10%;
+}
+
+#header form>input {
+    font-family: JosefinSans-SemiBold;
+    color: rgb(139, 150, 235);
+    padding: 5px 1px 5px 1px;
+    border: 2px solid rgb(242, 243, 255);
+    border-radius: 8px;
+    text-align: center;
+}
+
+::placeholder {
+    font-family: JosefinSans-SemiBold;
+    color: #abb3ee;
+}
+
+#header form>button {
+    font-family: JosefinSans-SemiBold;
+    color: #8191fc;
+    background: #f2f3ff;
+    border-radius: 8px;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#primary-nav {
+    display: inline-block;
+}
+
+#primary-nav>li {
+    padding: 5px;
+    font-size: 120%;
+    display: inline;
+    /* padding: 3px; */
+    font-family: JosefinSans-Regular;
+}
+
+#primary-nav>li>a {
+    color: rgb(182, 192, 255);
+    text-decoration: aqua;
+    font-family: JosefinSans-Regular;
+}
+
+@media screen and (min-width: 1000px) {
+    #header h1 {
+        padding: 0 15% 0 5%;
+        font-size: 250%
+    }
+
+    #header form {
+        padding: 0 5% 0 15%;
+    }
+
+    #header form::placeholder {
+        font-size: 120%;
+    }
+
+    #header form>input {
+        padding: 5px 1px 3px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+        font-size: 80%;
+    }
+
+    #header form>button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 2px 8px;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 80%;
+    }
+
+    #primary-nav>li {
+        padding: 5px;
+        font-size: 120%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #header form::placeholder {
+        font-size: 120%;
+    }
+
+    #header form>input {
+        padding: 5px 1px 3px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+        font-size: 100%;
+    }
+
+    #header form>button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 2px 8px;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 100%;
+    }
+
+    #primary-nav>li {
+        padding: 5px;
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 780px) {
+    #header h1 {
+        padding: 0 10% 0 5%;
+    }
+
+    #header form {
+        padding: 0 5% 0 10%;
+    }
+
+    #header form>input {
+        padding: 5px 1px 5px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+    }
+
+    #header form>button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 5px 8px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    #primary-nav>li {
+        padding: 5px;
+        font-size: 120%;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    #header h1 {
+        width: 85%;
+        /*        padding: 0 10% 0 5%;*/
+    }
+
+    #header form {
+        padding: 0 5% 0 10%;
+    }
+
+    #header form>input {
+        padding: 5px 1px 5px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+    }
+
+    #header form>button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 5px 8px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    #primary-nav>li {
+        padding: 5px;
+        font-size: 120%;
+    }
+
+    #primary-nav {
+        padding-right: 5%;
+    }
+}
+
+/* body section--------------------------------------------------------------- */
+.main {
+    padding: 2%;
+    background-color: #24212b;
+}
+
+.h1, .h2, .h3, .h4{
+    color: #ffffff !important;
+}
+
+.buttom
+{
+    background-color: #24212b !important;
+    box-shadow: none;
+}
+
+p{
+    color: #a4b0fb !important; 
+}
+
+#btn-post {
+    background: #9da8f5;
+    font-family: JosefinSans-Bold;
+    width: 100px;
+    /* font-size: 100%; */
+    color: #ffffff;
+    /* vertical-align: middle; */
+}
+
+#btn-upload {
+    background: #6cd8f2;
+    font-family: JosefinSans-Bold;
+    width: 100px;
+    /* font-size: 100%; */
+    color: #ffffff;
+}
+
+/*----animation-------------------------------------------------------------------------------*/
+
+#success {
+    background-color: aquamarine !important;
+    color: #127676;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/*------------------------font-----------------------------------------------------------------*/
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on October 2, 2019 */
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Bold';
+    src: url('josefinsans-bold-webfont.woff2') format('woff2'),
+        url('josefinsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Bold-Italic';
+    src: url('josefinsans-bolditalic-webfont.woff2') format('woff2'),
+        url('josefinsans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Italic';
+    src: url('josefinsans-italic-webfont.woff2') format('woff2'),
+        url('josefinsans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Light';
+    src: url('josefinsans-light-webfont.woff2') format('woff2'),
+        url('josefinsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Light_Italic';
+    src: url('josefinsans-lightitalic-webfont.woff2') format('woff2'),
+        url('josefinsans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url('josefinsans-regular-webfont.woff2') format('woff2'),
+        url('josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Semibold';
+    src: url('josefinsans-semibold-webfont.woff2') format('woff2'),
+        url('josefinsans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Semibold-Italic';
+    src: url('josefinsans-semibolditalic-webfont.woff2') format('woff2'),
+        url('josefinsans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Thin';
+    src: url('josefinsans-thin-webfont.woff2') format('woff2'),
+        url('josefinsans-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Thin-Italic';
+    src: url('josefinsans-thinitalic-webfont.woff2') format('woff2'),
+        url('josefinsans-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('futura_medium_bt-webfont.woff2') format('woff2'),
+        url('futura_medium_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'futura-Bold';
+    src: url('futura_heavy_font-webfont.woff2') format('woff2'),
+        url('futura_heavy_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

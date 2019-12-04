@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: JosefinSans-Regular !important;
+    background-color: #ffffff;
+}
+
+#logo
+{
+    color: rgb(143, 158, 255);
+}
+
+#active_tab
+{
+    color: rgb(86, 106, 236) !important; 
+    font-family: JosefinSans-Bold !important; 
+}
+.card
+{
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 10px 20px 0 rgba(173, 181, 228, 0.144);
+}
+
+
+
+
+
+/* footer section--------------------------------------------------------------- */
+#footer {
+    clear: both;
+    width: 100%;
+    padding: 3% 0% 3% 0%;
+
+    background-image: linear-gradient(-151deg, #c2cbfd 17%, #8191fc 94%);
+}
+
+#footer div {
+    text-align: center;
+    font-family: futura;
+    color: #f5f6ff;
+}
+
+#copyright > a {
+    color: #f5f6ff;
+    /* font-family: JosefinSans-Bold; */
+    font-family: futura-Bold;
+    padding: 0% 2% 0% 2%;
+    text-decoration: aqua;
+}
+
+@media screen and (max-width: 500px)
+{
+    #footer {
+        clear: both;
+        width: 100%;
+        padding: 7% 0% 7% 0%;
+        background-image: linear-gradient(-151deg, #c2cbfd 17%, #8191fc 94%);
+    }
+}
+/*-------------------------------animation------------------------------------------------------------------*/
+#secondary-nav, #content-left, #content-right
+{
+/*    color: #127676;*/
+    -webkit-animation: fadein 1.5s linear forwards;
+    animation: fadein 1.5s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

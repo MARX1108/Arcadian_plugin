@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Auto Post</title>
+    <script src="popup.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+
+  <body style="background-color:rgb(139, 150, 235);width:400px;height:300px;">
+    <!-- <form id="login" method="POST" action="http://ec2-52-55-10-130.compute-1.amazonaws.com/Arcadian/login/process"> -->
+      
+      <div class="container card p-2 m-2" id = 'confirm' hidden>
+        Post Success!
+        <a id = "link" href="">View your Post Here</a>
+      </div>
+      <div class="container mt-4" id = 'signin'>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="mb-0">Username</label>
+            <input id="un" name="un" type="text" placeholder=" Username" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="mb-0">Password</label>
+            <input id="pw" name="pw" type="text" placeholder=" Password" class="form-control" />
+        </div>
+      <button id="btn-signin" class="btn btn-primary ml-0 my-0 py-2">sign in</button>
+
+      </div>
+    <!-- </form> -->
+
+
+    <div class="card col-md-6 p-1 mx-2  mt-4 mr-5" id="middle_container" hidden>
+      <div class="post card mb-4 p-4" id="post_win" >
+          <label for="title" class="h5 ml-2 ">Title</label><br>
+          <input id="title" name="title" type="text" placeholder="Titles goes here" class="form-control"> <br>
+
+          <label for="url" class="h5  ml-2 mt-2">URL (required)</label><br>
+          <input id="url" name="url" type="text" placeholder="URL goes here" class="form-control"><br>
+
+          <label for="tags" class="h5  ml-2 mt-2">Tags </label><br>
+          <input id="tags" name="tags" type="text" placeholder="Tags goes here" class="form-control"><br>
+
+          <label for="img_url" class="h5 ml-2 mt-2">URL of Your Art Work (required)</label><br>
+          <input id="img_url" name="img_url" type="text" placeholder="URL of Your Art Work" class="form-control"><br>
+
+          <textarea id="description" name="description" placeholder="Description goes here."
+              class="form-control my-4 mt-2"></textarea><br>
+          <button id="upload" type="submit" class="btn btn-primary">Post</button>
+          <button id="auto" class="btn btn-primary ml-0 my-0 py-2">auto fill</button>
+
+      </div>
+    </div>
+  </body>
+</html>
+

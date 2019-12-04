@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    font-family: JosefinSans-Regular;
+    background-color: #ffffff;
+    background-color: #f7f8ff;
+}
+
+/* header section--------------------------------------------------------------- */
+#header{
+    background: #ffffff;
+}
+#header h1 {
+    display: inline-block;
+}
+
+#header form {
+    display: inline-block;
+}
+
+#header form > input {
+    font-family: JosefinSans-SemiBold;
+    color: rgb(139, 150, 235);
+    /* color: #127676; */
+    text-align: center;
+}
+
+#header form > button {
+    font-family: JosefinSans-SemiBold;
+    color: #8191fc;
+    background: #f2f3ff;
+}
+#primary-nav {
+    display: inline-block;
+}
+
+#primary-nav > li {
+    display: inline;
+    /* padding: 3px; */
+    font-family: JosefinSans-Regular;
+}
+
+#primary-nav > li > a {
+    color: rgb(182, 192, 255);
+    text-decoration: aqua;
+    font-family: JosefinSans-Regular;
+}
+
+#header {
+    padding: 2% 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+::placeholder {
+    font-family: JosefinSans-SemiBold;
+    color: #abb3ee;
+}
+
+@media screen and (min-width: 1000px) {
+    #header h1 {
+        padding: 0 15% 0 5%;
+        font-size: 250%
+    }
+
+    #header form {
+        padding: 0 5% 0 15%;
+    }
+
+    #header form::placeholder {
+        font-size: 120%;
+    }
+    #header form > input {
+        padding: 5px 1px 3px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+        font-size: 80%;
+    }
+
+    #header form > button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 2px 8px;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 80%;
+    }
+
+    #primary-nav > li {
+        padding: 5px;
+        font-size: 120%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #header form::placeholder {
+        font-size: 120%;
+    }
+    #header form > input {
+        padding: 5px 1px 3px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+        font-size: 100%;
+    }
+
+    #header form > button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 2px 8px;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 100%;
+    }
+
+    #primary-nav > li {
+        padding: 5px;
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 780px)
+{
+    #header h1 {
+        padding: 0 10% 0 5%;
+    }
+
+    #header form {
+        padding: 0 5% 0 10%;
+    }
+
+    #header form > input {
+        padding: 5px 1px 5px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+    }
+
+    #header form > button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 5px 8px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    #primary-nav > li {
+        padding: 5px;
+        font-size: 120%;
+    }
+
+}
+
+@media screen and (max-width: 780px)
+{
+    #header h1 {
+        width: 100%;
+/*        padding: 0 10% 0 5%;*/
+    }
+
+    #header form {
+        padding: 0 5% 0 10%;
+    }
+
+    #header form > input {
+        padding: 5px 1px 5px 1px;
+        border: 2px solid rgb(242, 243, 255);
+        border-radius: 8px;
+    }
+
+    #header form > button {
+        /* color: #127676;  */
+        border-radius: 8px;
+        padding: 5px 8px 5px 8px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    #primary-nav > li {
+        padding: 5px;
+        font-size: 120%;
+    }
+
+    #primary-nav {
+        padding-right: 5%;
+    }
+}
+
+
+
+/* ------------body----------------------- */
+.main{
+    padding: 20% 33% 20% 39%; 
+}
+
+#lock{
+    margin-left: 31%;
+}
+
+#btn-signin{
+    text-decoration: none; 
+    color: #448eff;
+    font-size: 100%; width: 100%; text-align: center;
+    margin-left: 22%;
+}
+
+/* footer section--------------------------------------------------------------- */
+#footer {
+    clear: both;
+    width: 100%;
+    padding: 3% 0% 3% 0%;
+
+    background-image: linear-gradient(-151deg, #c2cbfd 17%, #8191fc 94%);
+}
+
+#footer div {
+    text-align: center;
+    font-family: futura;
+    color: #f5f6ff;
+}
+
+#copyright > a {
+    color: #f5f6ff;
+    /* font-family: JosefinSans-Bold; */
+    font-family: futura-Bold;
+    padding: 0% 2% 0% 2%;
+    text-decoration: aqua;
+}
+
+@media screen and (max-width: 500px)
+{
+    #footer {
+        clear: both;
+        width: 100%;
+        padding: 7% 0% 7% 0%;
+        background-image: linear-gradient(-151deg, #c2cbfd 17%, #8191fc 94%);
+    }
+}
+/*-------------------------------animation------------------------------------------------------------------*/
+#secondary-nav, #content-left, #content-right
+{
+/*    color: #127676;*/
+    -webkit-animation: fadein 1.5s linear forwards;
+    animation: fadein 1.5s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*------------------------font-----------------------------------------------------------------*/
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on October 2, 2019 */
+
+@font-face {
+    font-family: "JosefinSans-Bold";
+    src: url("josefinsans-bold-webfont.woff2") format("woff2"),
+        url("josefinsans-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Bold-Italic";
+    src: url("josefinsans-bolditalic-webfont.woff2") format("woff2"),
+        url("josefinsans-bolditalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Italic";
+    src: url("josefinsans-italic-webfont.woff2") format("woff2"),
+        url("josefinsans-italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Light";
+    src: url("josefinsans-light-webfont.woff2") format("woff2"),
+        url("josefinsans-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Light_Italic";
+    src: url("josefinsans-lightitalic-webfont.woff2") format("woff2"),
+        url("josefinsans-lightitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Regular";
+    src: url("josefinsans-regular-webfont.woff2") format("woff2"),
+        url("josefinsans-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Semibold";
+    src: url("josefinsans-semibold-webfont.woff2") format("woff2"),
+        url("josefinsans-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Semibold-Italic";
+    src: url("josefinsans-semibolditalic-webfont.woff2") format("woff2"),
+        url("josefinsans-semibolditalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Thin";
+    src: url("josefinsans-thin-webfont.woff2") format("woff2"),
+        url("josefinsans-thin-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-Thin-Italic";
+    src: url("josefinsans-thinitalic-webfont.woff2") format("woff2"),
+        url("josefinsans-thinitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "futura";
+    src: url("futura_medium_bt-webfont.woff2") format("woff2"),
+        url("futura_medium_bt-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "futura-Bold";
+    src: url("futura_heavy_font-webfont.woff2") format("woff2"),
+        url("futura_heavy_font-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
